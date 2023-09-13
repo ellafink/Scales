@@ -16,7 +16,7 @@ void draw() {
 void scale(int x, int y) {
 //ellipse
   fill(#0D0493);
-  ellipse(x, y, 120, 120);
+  ellipse(x, y, 100, 100);
 //16-17, 22-31 sourced from processing website (has been edited for my program)
   float angle = TWO_PI / 15;
   float halfAngle = angle/2.0;
@@ -26,11 +26,11 @@ void scale(int x, int y) {
   fill(r, g, b);
   beginShape();
   for (float a = 0; a < TWO_PI; a += angle) {
-    float sx = x + cos(a) * 58;
-    float sy = y + sin(a) * 58;
+    float sx = x + cos(a) * 49;
+    float sy = y + sin(a) * 49;
     vertex(sx, sy);
-    sx = x + cos(a+halfAngle) * 30;
-    sy = y + sin(a+halfAngle) * 30;
+    sx = x + cos(a+halfAngle) * 25;
+    sy = y + sin(a+halfAngle) * 25;
     vertex(sx, sy);
   }
   endShape(CLOSE);
