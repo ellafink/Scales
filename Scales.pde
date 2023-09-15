@@ -3,12 +3,10 @@ void setup() {
 }
 void draw() {
   background(#FFF9B2);
-  System.out.println(mouseX + " " + mouseY);
   for(int x = 60; x < 1000; x+=100) {
     for(int y = 60; y < 1000; y+=100) {
       scale(x,y);
     }
-    System.out.println();
   }
 }
 
